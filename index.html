@@ -7,86 +7,104 @@
     <title>Home Page</title>
 </head>
 <body>
-    <h1 id="top">Welcome to Cafe O'Clock - Coffee Shop</h1>
-    <ul>
+    <header>
+        <h1 id="top">Welcome to Cafe O'Clock - Coffee Shop</h1>
+
         <!-- about us auto scroll -->
-        <li><a href="#aboutus">About Us</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#contact-us">Contact Us</a></li>
-    </ul>
-    <figure>
-        <img src="images/coffeeshop.jpg" alt="coffeeshop" height="500px">
-        <figcaption>Cafe O'Clock - Coffee Shop</figcaption>
-    </figure>
-    <hr>
+        <nav>
+           <li><a href="#aboutus">About Us</a></li>
+           <li><a href="#menu">Menu</a></li>
+           <li><a href="#contact-us">Contact Us</a></li>
+        </nav>
 
-    <!-- about us -->
-    <h2 id="aboutus">About Us</h2>
-    <p><acronym title="Cafe O'Clock">COC</acronym> is a coffee &#9749; shop in India.
-    We are the best <b>coffee</b> cafe in India.</p>
+        <figure>
+            <img src="images/coffeeshop.jpg" alt="coffeeshop" height="500px">
+            <figcaption>Cafe O'Clock - Coffee Shop</figcaption>
+        </figure>
+        <hr>
+    </header>
+    
 
-    <details>
-        <summary><b>Coffee</b></summary>
-        <p>Coffee is a drink prepared from roasted coffee beans. Darkly colored, bitter, and slightly acidic, coffee has a stimulating effect on humans, primarily due to its caffeine content. It has the highest sales in the world market for hot drinks.</p>
-    </details>
-    <img src="images/coffeebeans.jpg" alt="coffeebeans" height="300px">
-    <hr>
+    <section>
+        <!-- about us -->
+        <article>
+            <h2 id="aboutus">About Us</h2>
+            <p><acronym title="Cafe O'Clock">COC</acronym> is a coffee &#9749; shop in India.
+            We are the best <b>coffee</b> cafe in India.</p>
+        </article>
+        
+        <details>
+            <summary><b>Coffee</b></summary>
+            <p>Coffee is a drink prepared from roasted coffee beans. Darkly colored, bitter, and slightly acidic, coffee has a stimulating effect on humans, primarily due to its caffeine content. It has the highest sales in the world market for hot drinks.</p>
+        </details>
+        <img src="images/coffeebeans.jpg" alt="coffeebeans" height="300px">
+        <hr>
+    </section>
 
+    <section>
+        <!-- our menu -->
+        <h2 id="menu">Our Menu</h2>
+        <img src="images/coffeecup.jpg" alt="coffee menu" height="200px">
+        <br>
+        <table cellpadding="10px" border="2px solid">
+            <thead>
+                <tr>
+                    <th colspan="3" align="center">Menu</th>
+                </tr>
+                <tr>
+                    <th>Item no.</th>
+                    <th>Item</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Cappucino</td>
+                    <td>Rs 200</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Cold Cappucino</td>
+                    <td>Rs 200</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Pastry</td>
+                    <td>Rs 100</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <img src="images/pastry.jpg" alt="pastry" height="300px">
+        <hr>
+    </section>
+    
 
-    <!-- our menu -->
-    <h2 id="menu">Our Menu</h2>
-    <img src="images/coffeecup.jpg" alt="coffee menu" height="200px">
-    <table cellpadding="10px" border="2px solid">
-        <thead>
-            <tr>
-                <th colspan="3" align="center">Our Menu</th>
-            </tr>
-            <tr>
-                <th>Item no.</th>
-                <th>Item</th>
-                <th>Price</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Cappucino</td>
-                <td>Rs 200</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Cold Cappucino</td>
-                <td>Rs 200</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Pastry</td>
-                <td>Rs 100</td>
-            </tr>
-        </tbody>
-    </table>
-    <img src="images/pastry.jpg" alt="pastry" height="300px">
-    <hr>
+    <footer>
+        <!-- Contact Us -->
+        <h2 id="contact-us">Contact Us</h2>
+        <form action="get">
+            <label for="name">Your Name:</label>
+            <input type="text" name="name" id="name" required placeholder="Sam Tyson">
+            <br><br>
+            <label for="address">Your Address:</label>
+            <input type="address" name="address" id="address" required placeholder="your city">
+            <br><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required pattern=".[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="example@gmail.com">
+            <br><br>
+            
+            <a href="mailto:wokvn@telemail.com">Submit</a>
+        </form>
 
-    <!-- Contact Us -->
-    <h2 id="contact-us">Contact Us</h2>
-    <form action="get">
-        <label for="name">Your Name:</label>
-        <input type="text" name="name" id="name" required placeholder="Sam Tyson">
-        <br><br>
-        <label for="address">Your Address:</label>
-        <input type="address" name="address" id="address" required placeholder="your city">
-        <br><br>
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" required pattern=".[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="example@gmail.com">
-        <br><br>
-        <a href="mailto:wokvn@telemail.com">Submit</a>
-    </form>
+        <br>
+        <hr>
+        <br>
+        <a href="#top">Back to the top</a>
 
-    <br>
-    <hr>
-    <a href="#top">Back to the top</a>
-    <p>Made by Swapnil &#128150; by using HTML only &#9994;</p>
+        <p>Made by Swapnil &#128150; by using HTML only &#9994;</p>
+    </footer>   
 
 </body>
 </html>
